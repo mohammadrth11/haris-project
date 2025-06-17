@@ -15,7 +15,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/download" element={<DownloadApp />} />
+            <Route path="/download-app" element={<DownloadApp />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsAndConditions />} />
             <Route path="*" element={<PageNotFound />} />
