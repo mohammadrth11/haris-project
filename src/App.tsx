@@ -1,17 +1,27 @@
+import Layout from "@/components/layout/Layout";
+import About from "@/components/pages/About";
+import DownloadApp from "@/components/pages/DownloadApp";
+import PrivacyPolicy from "@/components/pages/PrivacyPolicy";
+import TermsAndConditions from "@/components/pages/TermsAndConditions";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import MainButton from "./components/atoms/MainButton";
-import { DownloadIcon } from "lucide-react";
+import Home from "./components/pages/Home";
+import PageNotFound from "./components/pages/PageNotFound";
 function App() {
-  const handleDownloadNowButton = () => {
-    alert("Test Test Test");
-  };
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline bg">Tailwind CSS WORK!</h1>
-      <MainButton icon={DownloadIcon} onClick={handleDownloadNowButton}>
-        حمله الان
-      </MainButton>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/download" element={<DownloadApp />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
