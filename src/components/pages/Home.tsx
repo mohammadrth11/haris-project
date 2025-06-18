@@ -1,11 +1,13 @@
-import Hero from "../sections/Hero";
-import ScreenshotsSection from "../sections/ScreenshotsSection";
+import FeaturesSection from "../organisms/FeaturesSection";
+import HeroSection from "../organisms/HeroSection";
+import ScreenshotsSection from "../organisms/ScreenshotsSection";
 
 export default function Home() {
   return (
-    <div className="container">
-      <Hero />
+    <>
+      <HeroSection />
       <ScreenshotsSection />
-    </div>
+      <FeaturesSection />
+    </>
   );
 }
