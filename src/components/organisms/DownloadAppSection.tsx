@@ -15,7 +15,7 @@ export default function DownloadAppSection() {
           حمله الآن وخلّيك في الأمان.
         </p>
         <div className="download-buttons flex flex-wrap gap-4 justify-end">
-          <MainButton icon={FaGooglePlay}>Google Plasy</MainButton>
+          <MainButton icon={FaGooglePlay}>Google Play</MainButton>
           <MainButton icon={FaApple}>App Store</MainButton>
         </div>
       </div>
