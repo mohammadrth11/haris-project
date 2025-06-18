@@ -6,7 +6,7 @@ const handleDownloadClick = () => {
 
 export default function HeroSection() {
   return (
-    <section className=" py-20 min-h-screen flex flex-col items-center justify-center gap-y-10 text-center">
+    <section className=" py-5 min-h-screen flex flex-col items-center justify-center gap-y-10 text-center">
       <h1 className="text-2xl md:text-4xl font-bold mb-4">
         معك <span className="text-[var(--main-color)]">في كل نقرة</span> ...
         لنحميك من كل خدعة!

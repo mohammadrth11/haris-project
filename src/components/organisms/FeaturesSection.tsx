@@ -47,7 +47,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <>
-      <section className="py-24 text-center text-white">
+      <section className="py-5 text-center text-white">
         <h2 className="text-3xl font-bold mb-16">
           <span className="text-[var(--secondary-color)]">حارس</span> مميزات
         </h2>
